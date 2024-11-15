@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'api',
+    'authentication',
 ]
 
 MIDDLEWARE = [
@@ -57,6 +58,8 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:3001'
 ]
+
+AUTH_USER_MODEL = 'authentication.CustomUser'
 
 ROOT_URLCONF = 'crud.urls'
 
